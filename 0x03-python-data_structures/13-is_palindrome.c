@@ -1,4 +1,5 @@
 #include "lists.h"
+
 /**
  * palindrome - check if is palindrome with recursion
  * @l: l
@@ -6,18 +7,19 @@
  *
  * Return: 1 palindrome, 0 not palindrome
  */
+
 int palindrome(listint_t **l, listint_t *r)
 {
-	int response;
+	int X;
 
 	if (r != NULL)
 	{
-		response = palindrome(l, r->next);
+		X = palindrome(l, r->next);
 		if (response != 0)
 		{
-			response = (r->n == (*l)->n);
+			X = (r->n == (*l)->n);
 			*l = (*l)->next;
-			return (response);
+			return (X);
 		}
 		return (0);
 
@@ -31,6 +33,7 @@ int palindrome(listint_t **l, listint_t *r)
  *
  * Return: 1 palindrome, 0 not palindrome
  */
+
 int is_palindrome(listint_t **head)
 {
 	if (head == NULL)
