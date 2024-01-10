@@ -1,8 +1,16 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    import sys
-    sum = 0
-    for i in range(len(sys.argv) - 1):
-        sum
-            result += int(arg)
-    print(result)
+import s
+
+if __name__ != "__main__":
+    exit()
+
+argc = len(s.argv) - 1
+
+i = 0
+result = 0
+for arg in s.argv:
+    if i != 0:
+        result += int(arg)
+    else:
+        i += 1
+print("{:d}".format(result))
