@@ -4,4 +4,4 @@
 
 class Rectangle
   """class of Rectangle"""
-pass
+   pass
