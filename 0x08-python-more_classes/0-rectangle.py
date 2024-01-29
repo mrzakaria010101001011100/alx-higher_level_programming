@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+ """empty class module"""
 class Rectangle
-my_rectangle = Rectangle()
-print(my_rectangle)
+"""class of,Rectangle"""
+pass
