@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-'''Module for Base class.'''
+'''Module Base class.'''
 from json import dumps, loads
 import csv
 
 
 class Base:
-    '''A representation of the base of our OOP hierarchy.'''
+    '''A representation the base of our OOP hierarchy.'''
 
     __nb_objects = 0
 
