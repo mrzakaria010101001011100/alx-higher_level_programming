@@ -1,2 +1,2 @@
 --sts all the tables of a database in your MySQL
-SHOW TABLES;
+SHOW TABLES FROM `mysql`;
