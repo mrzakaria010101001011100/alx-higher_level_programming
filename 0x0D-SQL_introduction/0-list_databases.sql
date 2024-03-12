@@ -1,2 +1,2 @@
-MySQL 8.0
+-- Lists all databases of the MySQL server.
 SHOW DATABASES;
