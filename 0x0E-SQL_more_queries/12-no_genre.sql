@@ -1,11 +1,10 @@
 -- Select the title of the TV shows and the genre IDs from the appropriate tables
-SELECT tv_shows.title, tv_show_genres.genre_id
 -- From the TV shows table
-FROM tv_shows
 -- Left join with TV show genres table to include shows without genres
-LEFT JOIN tv_show_genres ON tv_shows.id = tv_show_genres.tv_show_id
 -- Filter records where genre_id is NULL (no genre linked)
-WHERE tv_show_genres.genre_id IS NULL
 -- Order results by title and genre ID
-ORDER BY tv_shows.title ASC, tv_show_genres.genre_id ASC;
 
+SELECT title, tv_show_genres.genre_id FROM tv_shows
+LEFT JOIN tv_show_genres ON id=tv_show_genres.show_id
+WHERE tv_show_genres.show_id IS NULL
+ORDER BY title, tv_show_genres.genre_id;
