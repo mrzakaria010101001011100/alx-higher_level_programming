@@ -1,11 +1,8 @@
 #!/usr/bin/node
-
-// prints the first argument value  passed to it
+// prints the first argumen.
 
 if (process.argv[2] === undefined) {
-	console.log("NO argument");
+  console.log('No argument');
 } else {
-	console.log(process.argv[2]);
+  console.log(process.argv[2]);
 }
-
-
